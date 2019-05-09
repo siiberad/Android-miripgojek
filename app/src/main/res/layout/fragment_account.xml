@@ -1,0 +1,424 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbaracc"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            >
+
+            <TextView
+                android:id="@+id/go"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:text="Account"
+                android:textColor="@android:color/black"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scr_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="65dp"
+        android:background="@color/accountBack"
+        tools:context=".fragment.AccountFragment">
+
+        <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_marginTop="57dp"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/acctext1"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:text="Tedy Ir"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="170dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="end"
+                    android:text="EDIT"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/acctext2"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_below="@id/acctext1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:text="siiberad@gmail.com"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/acctext3"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_below="@id/acctext2"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:text="089099089899797"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout1">
+
+                <TextView
+                    android:id="@+id/acctext4"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="17dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:text="Connected as:"
+                    android:textColor="@color/Connected"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/acctext4"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/facebook"
+                    app:layout_constraintTop_toBottomOf="@+id/acctext4"/>
+
+                <TextView
+                    android:id="@+id/acctext5"
+                    android:layout_width="256dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/acctext4"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    android:text="Tedy"
+                    android:textColor="@color/AccountPr"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+
+                <ImageView
+                    android:id="@+id/image01"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/alogo1"
+                    app:layout_constraintBottom_toTopOf="@+id/image02"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="spread" />
+
+                <TextView
+                    android:id="@+id/acctext6"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:text="Enter Promo Code"
+                    android:clickable="true"
+                    android:textColor="@color/AccountPr"
+                    app:layout_constraintBottom_toTopOf="@+id/acctext7"
+                    app:layout_constraintStart_toEndOf="@+id/image01"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="spread"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/image02"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/alogo2"
+                    app:layout_constraintBottom_toBottomOf="@id/image03"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/image01" />
+
+                <TextView
+                    android:id="@+id/acctext7"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="My Vouchers"
+                    android:textColor="@color/AccountPr"
+                    android:clickable="true"
+                    app:layout_constraintBottom_toBottomOf="@id/acctext8"
+                    app:layout_constraintStart_toEndOf="@+id/image02"
+                    app:layout_constraintTop_toBottomOf="@id/acctext6"
+                    />
+
+                <ImageView
+                    android:id="@+id/image03"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/alogo3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image02" />
+
+                <TextView
+                    android:id="@+id/acctext8"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="40dp"
+                    android:text="Change Language"
+                    android:clickable="true"
+                    android:textColor="@color/AccountPr"
+                    app:layout_constraintStart_toEndOf="@+id/image03"
+                    app:layout_constraintTop_toBottomOf="@id/acctext7"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:focusable="true" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="268dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
+
+                <ImageView
+                    android:id="@+id/image05"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/alogo4"
+                    />
+
+                <TextView
+                    android:id="@+id/acctext10"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    android:text="Help"
+                    android:textColor="@color/AccountPr"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/image06"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_below="@+id/image05"
+                    android:src="@drawable/alogo5"
+                    />
+
+                <TextView
+                    android:id="@+id/acctext11"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/acctext10"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    android:text="Term of Service"
+                    android:textColor="@color/AccountPr"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/image07"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_below="@+id/image06"
+                    android:src="@drawable/alogo6"
+                    />
+
+                <TextView
+                    android:id="@+id/acctext12"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/acctext11"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    android:text="Logged in Devices"
+                    android:textColor="@color/AccountPr"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/image08"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_below="@+id/image07"
+                    android:src="@drawable/alogo7"
+                    />
+
+                <TextView
+                    android:id="@+id/acctext13"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/acctext12"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    android:text="Privacy Policy"
+                    android:textColor="@color/AccountPr"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/image09"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_below="@+id/image08"
+                    android:src="@drawable/alogo8"
+                    />
+
+                <TextView
+                    android:id="@+id/acctext14"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/acctext13"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    android:text="Rate Go App"
+                    android:textColor="@color/AccountPr"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/acctext15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="170dp"
+                    android:layout_below="@+id/acctext13"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="end"
+                    android:text="0.01"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout4"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="Logout"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>
